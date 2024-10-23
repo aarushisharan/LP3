@@ -64,7 +64,7 @@
         }
         //create a min heap, priority queue
         priority_queue<HuffmanNode*, vector <HuffmanNode*>, compare>pq;
-        //HuffmanNode*: pq will store pointers to HuffmanNode objects
+        //HuffmanNode*: pq will store pointers to HuffmanNode objects; Type of elements in the pq.
         //vector: underlying container to implement pq
         //Compare:A custom comparison function is used to order the elements based on the frequency of characters, ensuring that nodes with lower frequencies are at the top (min-heap behavior).
         
