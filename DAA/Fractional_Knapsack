@@ -12,11 +12,11 @@ double frac_knapsack(vector<pair<int, int>>& items, int capacity) {
 
     // Calculate profit/weight ratio for each item
     for (int i = 0; i < n; i++) {
-        prof_wt[i] = { (double)items[i].first / items[i].second, i };
+        prof_wt[i] = { (double)items[i].first / items[i].second, i }; // save the pair(prof_wt ratio, index)
     }
 
     // Sort items based on profit/weight ratio in descending order
-    sort(prof_wt.rbegin(), prof_wt.rend());
+    sort(prof_wt.rbegin(), prof_wt.rend());// sort in descending order
 
     // Iterate over sorted items
     for (int i = 0; i < n; i++) {
